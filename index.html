@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: linear-gradient(rgb);
+           
+        }
+        h1{
+            background-color: red;
+            
+        }
+        .buttons{
+            text-align: center;
+        }
+        button{
+            width: 90px;
+            height: 30px;
+            background-color: blue;
+            padding: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: rgb(12, 232, 12);
+        }
+        img{
+            margin-top: 8%;
+            margin-bottom: 8px;
+            transition: all 1s;
+        }
+       #skew:hover~.main img{
+        transform: skew(40deg);
+       } 
+       #rotate:hover~.main img{
+        transform: rotate(360deg);
+       }
+       #scale:hover~.main img{
+        transform:scale(2) ;
+       }
+       #translate:hover~.main img{
+        transform: translate(50px,90px);
+       }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="buttons">
+    <center><h1>transform examnple</h1></center>
+   
+    <button id="skew">skew</button>
+    <button id="rotate">rotate</button>
+    <button id="translate">translate</button>
+    <button id="scale">scale</button>
+    
+    <div class="main">
+        <img src="./tiger.jpg" height=200" width="200">
+    </div>
+    </div>
+    
+   
+
+   
+
+   
+
+   
+
+    
+        
+    
+
+</body>
+</html>
